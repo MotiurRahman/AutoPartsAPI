@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors("*"));
 app.use(express.json());
 
 // Ensure models are registered once
